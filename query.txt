@@ -7,3 +7,29 @@ SELECT
 FROM products
     left join suppliers_city sc on products.supplier_id = sc.supplier_id
 order by products.id
+
+-----------------------------------------------------------------------------
+
+SELECT
+    products.id,
+    products.name,
+    products.supplier_id,
+    sc.city,
+    products.createdAt
+FROM products
+    inner join suppliers_city sc on products.supplier_id = sc.supplier_id
+order by products.id
+
+-----------------------------------------------------------------------------
+
+SELECT
+    products.id,
+    products.name,
+    products.supplier_id,
+    sc.city,
+    products.createdAt
+FROM products
+    inner join suppliers_city sc on products.supplier_id = sc.supplier_id
+order by products.id
+
+------------------------------------------------------------------------------
